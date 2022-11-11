@@ -12,7 +12,7 @@ var app = new Vue({
     },
     methods: {
         cambiaOggettoRight: function () {
-            let lunghezza = this.imgarray.length - 1;
+            let lunghezza = this.imgar.length - 1;
             console.log(lunghezza)
 
             if (this.indice >= lunghezza) {
@@ -23,10 +23,10 @@ var app = new Vue({
         },
 
         cambiaOggettoLeft: function () {
-            let lunghezza = this.imgarray.length - 1;
+            let lunghezza = this.imgar.length - 1;
 
             if (this.indice >= lunghezza) {
-                return this.indice = 0;
+                return this.indice = 4;
             } else {
                 return this.indice--;
             }
