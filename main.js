@@ -23,10 +23,10 @@ var app = new Vue({
         },
 
         cambiaOggettoLeft: function () {
-            let lunghezza = this.imgar.length - 1;
+            let min = 0;
 
-            if (this.indice >= lunghezza) {
-                return this.indice = 4;
+            if (this.indice <= min) {
+                return this.indice = this.imgar.length -1;
             } else {
                 return this.indice--;
             }
